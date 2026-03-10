@@ -2,7 +2,7 @@
 **Author: Pirassena Sabaratnam**
 
 ## Overview
-FSU v2 is a byte-level language model combining **Gated Linear Attention** (GLA) — a linear-complexity alternative to softmax attention — with **Mixture-of-Experts** (MoE) routing and depthwise causal convolutions. It was developed as a bridge between the continuous field experiments of FSU v1 and the novel physics-based approach of the Gravitational Vector Network (GVN).
+FSU v2 is a byte-level language model combining **Gated Linear Attention** (GLA) — a linear-complexity alternative to softmax attention — with **Mixture-of-Experts** (MoE) routing and depthwise causal convolutions. It was developed as a bridge between the continuous field experiments of FSU v1.
 
 ## Architecture
 
@@ -30,7 +30,7 @@ Each of the 24 layers consists of three components:
 FSU v2 produced **coherent English responses** — a significant improvement over the incoherent outputs of FSU v1's PDE-based approach. However, it lacked **long-range context propagation**: responses were grammatically correct but did not sustain topical coherence beyond short spans.
 
 ## Why It Was Abandoned
-The architecture worked, but it was built entirely from established paradigms (GLA from state-space model literature, MoE from Transformer scaling research). The research goal was not to combine existing methods, but to validate whether the continuous dynamics concept from FSU v1 could work as a **native computational mechanism** — not as a wrapper around known approaches. This led to the development of **GVN**, which replaced attention with N-body gravitational physics and achieved the original research objective.
+The architecture worked, but it was built entirely from established paradigms (GLA from state-space model literature, MoE from Transformer scaling research). The research goal was not to combine existing methods, but to validate whether the continuous dynamics concept from FSU v1 could work as a **native computational mechanism** — not as a wrapper around known approaches.
 
 ## License
 Apache License 2.0.
